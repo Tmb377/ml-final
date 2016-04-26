@@ -5,6 +5,8 @@ import pandas as pd
 from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.feature_extraction import DictVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cluster import KMeans
 
 
 #data columns to use
@@ -18,21 +20,19 @@ data_types = {'Unique Key':np.int64,  'latitude':np.float64, 'longitude':np.floa
 file_name = '311_Service_Requests.csv'
 
 #pandas csv parser
-data = pd.read_csv(file_name, usecols=data_cols, dtype=data_types, parse_dates=True, engine='c',infer_datetime_format=True, float_precision='round-trip',keep_default_na=False)
+data = pd.read_csv(file_name, usecols=data_cols, dtype=data_types, parse_dates=True, engine='c',infer_datetime_format=True, float_precision='round-trip')
 
-categorical_feats = [ "Agency", "Complaint Type"]
+#drop any row with missing values
+processed_data = data.dropna(subset=data_cols, how='any')
 
 
-#another way of parsing csv files, reads as dictioary instead of vectors
-#dict_vect = DictVectorizer()
-#dict_vect.fit_transform(data).toArray()
+#get_dummies replaces categorical features with binary features
+encoded_data = pd.get_dummies(processed_data)
 
-#encodes categorical features
-#enc = OneHotEncoder( categorical_features = categorical_feats, handle_unknown='ignore')
-#num_data = enc.fit_transform(data)
 
-#fills missing features
-#imp = Imputer(missing_values='NaN', strategy='most_frequent', axis=0)
-#filled_data = imp.fit_transform(data[""])
-#imp.fit(data)
+
+kmeans = KMeans()
+labels = kmeans.fit_predict(encoded_data)
+
+
 

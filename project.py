@@ -11,7 +11,7 @@ from sklearn.cluster import KMeans
 
 #data columns to use
 #data_cols = ["Unique Key", "Created Date", "Agency", "Agency Name", "Complaint Type", "Descriptor", "Location Type",  "City", "Status", "Resolution Description", "Resolution Action Updated Date",  "Latitude", "Longitude"]
-data_cols = ["Unique Key",  "Agency", "Complaint Type",  "Latitude", "Longitude"]
+data_cols = ["Unique Key",  "Agency", "Complaint Type",  "Latitude", "Longitude", "Status"]
 
 #data types
 data_types = {'Unique Key':np.int64,  'latitude':np.float64, 'longitude':np.float64 }

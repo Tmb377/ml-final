@@ -7,6 +7,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.preprocessing import LabelEncoder
 from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
 
 
 #data columns to use
@@ -30,9 +31,16 @@ processed_data = data.dropna(subset=data_cols, how='any')
 encoded_data = pd.get_dummies(processed_data)
 
 
-
+#default is 8 clusters
 kmeans = KMeans()
 labels = kmeans.fit_predict(encoded_data)
+
+score = silhouette_score(encoded_data, labels)
+
+
+print(labels)
+print("Score", score)
+
 
 
 

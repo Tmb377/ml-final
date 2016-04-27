@@ -1,5 +1,6 @@
 import csv
 import io
+import cPickle as pickle
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import Imputer
@@ -43,4 +44,7 @@ print("Score", score)
 
 
 
+
+
+pickle.dump(labels, open('labels.p','wb'))
 

@@ -1,6 +1,6 @@
 import csv
 import io
-import cPickle as pickle
+import pickle
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import Imputer
@@ -29,10 +29,11 @@ processed_data = data.dropna(subset=data_cols, how='any')
 
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
-
+#save data into a pickle
+pickle.dump(encoded_data, open('encoded_data.p','wb'))
 
 
 kmeans = KMeans()
 labels = kmeans.fit_predict(encoded_data)
-
+#save labels into a pickle
 pickle.dump(labels, open('labels.p','wb'))

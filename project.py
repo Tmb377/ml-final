@@ -36,7 +36,7 @@ pickle.dump(encoded_data, open('encoded_data.p','wb'))
 #default is 8 clusters
 kmeans = KMeans()
 labels = kmeans.fit_predict(encoded_data)
-<<<<<<< HEAD
+
 
 score = silhouette_score(encoded_data, labels)
 
@@ -48,8 +48,8 @@ print("Score", score)
 
 
 
-=======
+
 #save labels into a pickle
->>>>>>> 2fa942756059099ba5b6fdaa390737e9b506b77c
+
 pickle.dump(labels, open('labels.p','wb'))
 

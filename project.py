@@ -1,5 +1,6 @@
 import csv
 import io
+import cPickle as pickle
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import Imputer
@@ -34,5 +35,4 @@ encoded_data = pd.get_dummies(processed_data)
 kmeans = KMeans()
 labels = kmeans.fit_predict(encoded_data)
 
-
-
+pickle.dump(labels, open('labels.p','wb'))

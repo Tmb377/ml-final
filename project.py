@@ -38,7 +38,7 @@ kmeans = KMeans()
 labels = kmeans.fit_predict(encoded_data)
 
 
-score = silhouette_score(encoded_data, labels)
+score = silhouette_score(encoded_data, labels, metric='euclidean')
 
 
 print(labels)

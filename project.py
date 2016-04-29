@@ -49,31 +49,33 @@ processed_data = data.dropna(axis=0, subset=(time_cols + data_cols[:-1]), how='a
 
 print('time to get processed data:', time.time()-start)
 
-processed_data = processed_data[:10000]
 
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
 
+
+np.save('call_data', encoded_data)
 #save data into a pickle
 # pickle.dump(encoded_data, open('encoded_data.p','wb'))
-
+#encoded_data = np.load('call_data.npy')
 print('time to get encoded_data:', time.time()-start)
 
+
+
 #default is 8 clusters
-kmeans = KMeans(n_clusters=20)
-labels = kmeans.fit_predict(encoded_data)
+#kmeans = KMeans(n_clusters=50, max_iter=20)
+#labels = kmeans.fit_predict(encoded_data)
 
-print('time to get Kmeans fit:', time.time()-start)
+#print('time to get Kmeans fit:', time.time()-start)
 
 
-score = silhouette_score(encoded_data, labels, metric='euclidean',  sample_size=None)
+#score = silhouette_score(encoded_data, labels, metric='euclidean',  sample_size=None)
 
-#
-print('time to silhouette_score:', time.time()-start)
+#print('time to silhouette_score:', time.time()-start)
 
 
 #print(labels)
-print("Score", score)
+#print("Score", score)
 
 
 #save labels into a pickle

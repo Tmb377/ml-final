@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-from scikits.statsmodels.tools import categorical 
 
 start = time.time()
 #data columns to use
@@ -52,34 +51,21 @@ print('time to get processed data:', time.time()-start)
 
 #np.save('unencoded_call_data', processed_data)
 
+# get unique complaint types
+complaint_types = np.sort(processed_data['Complaint Type'].unique())
+
+# replace complaint types with numbers
+for i in range(len(complaint_types)):
+	processed_data['Complaint Type'] = processed_data['Complaint Type'].replace(complaint_types[i],i)
+
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
 
 
-#np.save('call_data', encoded_data)
-#save data into a pickle
-# pickle.dump(encoded_data, open('encoded_data.p','wb'))
-#encoded_data = np.load('call_data.npy')
+np.save('call_data', encoded_data)
+
+
 print('time to get encoded_data:', time.time()-start)
 
 
 
-#default is 8 clusters
-#kmeans = KMeans(n_clusters=50, max_iter=20)
-#labels = kmeans.fit_predict(encoded_data)
-
-#print('time to get Kmeans fit:', time.time()-start)
-
-
-#score = silhouette_score(encoded_data, labels, metric='euclidean',  sample_size=None)
-
-#print('time to silhouette_score:', time.time()-start)
-
-
-#print(labels)
-#print("Score", score)
-
-
-#save labels into a pickle
-
-# pickle.dump(labels, open('labels.p','wb'))

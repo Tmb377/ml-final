@@ -49,12 +49,13 @@ processed_data = data.dropna(axis=0, subset=(time_cols + data_cols[:-1]), how='a
 
 print('time to get processed data:', time.time()-start)
 
+np.save('unencoded_call_data', processed_data)
 
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
 
-
-np.save('call_data', encoded_data)
+print(encoded_data.columns)
+#np.save('call_data', encoded_data)
 #save data into a pickle
 # pickle.dump(encoded_data, open('encoded_data.p','wb'))
 #encoded_data = np.load('call_data.npy')

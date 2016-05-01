@@ -1,0 +1,194 @@
+0 Unique Key
+1 Latitude
+2 Longitude
+3 month
+4 year
+5 hour
+6 AM
+7 Agency_3-1-1
+8 Agency_CHALL
+9 Agency_DCA
+10 Agency_DEP
+11 Agency_DFTA
+12 Agency_DHS
+13 Agency_DOB
+14 Agency_DOE
+15 Agency_DOF
+16 Agency_DOHMH
+17 Agency_DOITT
+18 Agency_DOT
+19 Agency_DPR
+20 Agency_DSNY
+21 Agency_EDC
+22 Agency_FDNY
+23 Agency_HPD
+24 Agency_HRA
+25 Agency_NYPD
+26 Agency_TLC
+27 Complaint Type_APPLIANCE
+28 Complaint Type_Adopt-A-Basket
+29 Complaint Type_Advocate - Other
+30 Complaint Type_Advocate-Co-opCondo Abatement
+31 Complaint Type_Advocate-Personal Exemptions
+32 Complaint Type_Agency Issues
+33 Complaint Type_Air Quality
+34 Complaint Type_Animal Abuse
+35 Complaint Type_Animal Facility - No Permit
+36 Complaint Type_Animal in a Park
+37 Complaint Type_Asbestos
+38 Complaint Type_BEST/Site Safety
+39 Complaint Type_Beach/Pool/Sauna Complaint
+40 Complaint Type_Benefit Card Replacement
+41 Complaint Type_Bike Rack Condition
+42 Complaint Type_Bike/Roller/Skate Chronic
+43 Complaint Type_Blocked Driveway
+44 Complaint Type_Boilers
+45 Complaint Type_Bottled Water
+46 Complaint Type_Bridge Condition
+47 Complaint Type_Broken Muni Meter
+48 Complaint Type_Broken Parking Meter
+49 Complaint Type_Building/Use
+50 Complaint Type_Bus Stop Shelter Placement
+51 Complaint Type_Calorie Labeling
+52 Complaint Type_City Vehicle Placard Complaint
+53 Complaint Type_Collection Truck Noise
+54 Complaint Type_Consumer Complaint
+55 Complaint Type_Cranes and Derricks
+56 Complaint Type_Curb Condition
+57 Complaint Type_DOF Literature Request
+58 Complaint Type_DOF Parking - Tax Exemption
+59 Complaint Type_DOF Property - Reduction Issue
+60 Complaint Type_DOF Property - Update Account
+61 Complaint Type_DOOR/WINDOW
+62 Complaint Type_DOT Literature Request
+63 Complaint Type_DPR Internal
+64 Complaint Type_Damaged Tree
+65 Complaint Type_Day Care
+66 Complaint Type_Dead/Dying Tree
+67 Complaint Type_Derelict Bicycle
+68 Complaint Type_Derelict Vehicle
+69 Complaint Type_Derelict Vehicles
+70 Complaint Type_Dirty Conditions
+71 Complaint Type_Disorderly Youth
+72 Complaint Type_Drinking
+73 Complaint Type_Drinking Water
+74 Complaint Type_EAP Inspection - F59
+75 Complaint Type_ELECTRIC
+76 Complaint Type_ELEVATOR
+77 Complaint Type_Electrical
+78 Complaint Type_Elevator
+79 Complaint Type_Emergency Response Team (ERT)
+80 Complaint Type_FLOORING/STAIRS
+81 Complaint Type_Fire Alarm - Modification
+82 Complaint Type_Fire Alarm - New System
+83 Complaint Type_Fire Alarm - Reinspection
+84 Complaint Type_Fire Alarm - Replacement
+85 Complaint Type_Fire Safety Director - F58
+86 Complaint Type_Food Establishment
+87 Complaint Type_Food Poisoning
+88 Complaint Type_For Hire Vehicle Complaint
+89 Complaint Type_For Hire Vehicle Report
+90 Complaint Type_Found Property
+91 Complaint Type_GENERAL
+92 Complaint Type_General Construction/Plumbing
+93 Complaint Type_Graffiti
+94 Complaint Type_HEAT/HOT WATER
+95 Complaint Type_HPD Literature Request
+96 Complaint Type_Harboring Bees/Wasps
+97 Complaint Type_Hazardous Materials
+98 Complaint Type_Highway Condition
+99 Complaint Type_Homeless Encampment
+100 Complaint Type_Homeless Person Assistance
+101 Complaint Type_Illegal Animal Kept as Pet
+102 Complaint Type_Illegal Animal Sold
+103 Complaint Type_Illegal Fireworks
+104 Complaint Type_Illegal Parking
+105 Complaint Type_Illegal Tree Damage
+106 Complaint Type_Indoor Air Quality
+107 Complaint Type_Indoor Sewage
+108 Complaint Type_Industrial Waste
+109 Complaint Type_Investigations and Discipline (IAD)
+110 Complaint Type_Invitation
+111 Complaint Type_Lead
+112 Complaint Type_Literature Request
+113 Complaint Type_Litter Basket / Request
+114 Complaint Type_Maintenance or Facility
+115 Complaint Type_Missed Collection (All Materials)
+116 Complaint Type_Mold
+117 Complaint Type_Municipal Parking Facility
+118 Complaint Type_New Tree Request
+119 Complaint Type_Noise
+120 Complaint Type_Noise - Commercial
+121 Complaint Type_Noise - Helicopter
+122 Complaint Type_Noise - House of Worship
+123 Complaint Type_Noise - Park
+124 Complaint Type_Noise - Street/Sidewalk
+125 Complaint Type_Noise - Vehicle
+126 Complaint Type_Non-Residential Heat
+127 Complaint Type_OUTSIDE BUILDING
+128 Complaint Type_Open Flame Permit
+129 Complaint Type_Opinion for the Mayor
+130 Complaint Type_Other Enforcement
+131 Complaint Type_Overflowing Litter Baskets
+132 Complaint Type_Overflowing Recycling Baskets
+133 Complaint Type_Overgrown Tree/Branches
+134 Complaint Type_PAINT/PLASTER
+135 Complaint Type_PLUMBING
+136 Complaint Type_Panhandling
+137 Complaint Type_Plumbing
+138 Complaint Type_Posting Advertisement
+139 Complaint Type_Public Assembly
+140 Complaint Type_Public Payphone Complaint
+141 Complaint Type_Rangehood
+142 Complaint Type_Recycling Enforcement
+143 Complaint Type_Request for Information
+144 Complaint Type_Rodent
+145 Complaint Type_Root/Sewer/Sidewalk Condition
+146 Complaint Type_SAFETY
+147 Complaint Type_SCRIE
+148 Complaint Type_Sanitation Condition
+149 Complaint Type_Scaffold Safety
+150 Complaint Type_School Maintenance
+151 Complaint Type_Senior Center Complaint
+152 Complaint Type_Sewer
+153 Complaint Type_Sidewalk Condition
+154 Complaint Type_Smoking
+155 Complaint Type_Snow
+156 Complaint Type_Special Enforcement
+157 Complaint Type_Special Natural Area District (SNAD)
+158 Complaint Type_Special Projects Inspection Team (SPIT)
+159 Complaint Type_Street Condition
+160 Complaint Type_Street Light Condition
+161 Complaint Type_Street Sign - Damaged
+162 Complaint Type_Street Sign - Dangling
+163 Complaint Type_Street Sign - Missing
+164 Complaint Type_Sweeping/Inadequate
+165 Complaint Type_Sweeping/Missed
+166 Complaint Type_Tanning
+167 Complaint Type_Tattooing
+168 Complaint Type_Taxi Complaint
+169 Complaint Type_Taxi Report
+170 Complaint Type_Taxpayer Advocate Inquiry
+171 Complaint Type_Traffic
+172 Complaint Type_Traffic Signal Condition
+173 Complaint Type_UNSANITARY CONDITION
+174 Complaint Type_Unleashed Dog
+175 Complaint Type_Unsanitary Animal Facility
+176 Complaint Type_Unsanitary Animal Pvt Property
+177 Complaint Type_Unsanitary Pigeon Condition
+178 Complaint Type_Urinating in Public
+179 Complaint Type_Vacant Lot
+180 Complaint Type_Vending
+181 Complaint Type_Violation of Park Rules
+182 Complaint Type_WATER LEAK
+183 Complaint Type_Water Conservation
+184 Complaint Type_Water Quality
+185 Complaint Type_Water System
+186 Complaint Type_Window Guard
+187 Complaint Type_X-Ray Machine/Equipment
+188 Status_Assigned
+189 Status_Closed
+190 Status_Email Sent
+191 Status_Open
+192 Status_Pending
+193 Status_Started

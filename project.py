@@ -6,16 +6,16 @@ from sklearn.metrics import silhouette_score
 
 start = time.time()
 #data columns to use
-data_cols = ["Unique Key",  "Agency", "Complaint Type",  "Latitude", "Longitude", "Status", "Created Date"]
+data_cols = ["Unique Key",  "Agency", "Complaint Type",  "Latitude", "Longitude", "Status","Incident Zip", "Created Date"]
 
 #data types
-data_types = {'Unique Key':np.int64,  'latitude':np.float64, 'longitude':np.float64 }
+data_types = {'Unique Key':np.int64,  'latitude':np.float64, 'longitude':np.float64, 'Incident Zip':np.float64}
 
 #name of csv file
 file_name = '311_Service_Requests.csv'
 
 #pandas csv parser
-data = pd.read_csv(file_name, usecols=data_cols, dtype=data_types, parse_dates=True, engine='c',infer_datetime_format=True, float_precision='round-trip')
+data = pd.read_csv(file_name, usecols=data_cols, dtype=data_types, parse_dates=True, engine='c',infer_datetime_format=True, float_precision='round-trip', na_values='43123-8895')
 
 date_col = data[['Created Date']]
 
@@ -60,6 +60,8 @@ for i in range(len(complaint_types)):
 
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
+
+print(encoded_data.columns)
 
 
 np.save('call_data', encoded_data)

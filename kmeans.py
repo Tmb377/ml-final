@@ -25,7 +25,7 @@ def get_kmeans(data,n):
 
     print('time to get Kmeans fit:', time.time()-start)
     print("Number of data points in each cluster:", Counter(labels))
-    return(labels)
+    return(labels,kmeans)
 
 
 def get_silhouette(data, labels):
@@ -38,4 +38,4 @@ def get_affinity(data):
     labels = aff.fit_predict(data)
 
     print('time to get Affinity Propagation', time.time() - start)
-    return(labels) 
+    return(labels)

@@ -6,25 +6,25 @@ from sklearn.metrics import silhouette_score
 
 
 start = time.time()
+def get_data():
 
-data = np.load('call_data.npy')
+    data = np.load('call_data.npy')
 
-print('time to get data:', time.time()-start)
+    print('time to get data:', time.time()-start)
 
-data = data[:10000]
+    data = data[:10000]
+    return(data)
 
-#default is 8 clusters
-kmeans = KMeans(n_clusters=50, max_iter=20)
-labels = kmeans.fit_predict(data)
+def get_kmeans(data,n):
+    #default is 8 clusters
+    kmeans = KMeans(n_clusters=n, max_iter=20)
+    labels = kmeans.fit_predict(data)
 
-print('time to get Kmeans fit:', time.time()-start)
-
-
-score = silhouette_score(data, labels, metric='euclidean',  sample_size=None)
-
-print('time to silhouette_score:', time.time()-start)
-
+    print('time to get Kmeans fit:', time.time()-start)
+    return(kmeans)
 
 
-print("Score", score)
-
+def get_silhouette(data, labels):
+    score = silhouette_score(data, labels, metric='euclidean',  sample_size=None)
+    print('time to silhouette_score:', time.time()-start)
+    return(score)

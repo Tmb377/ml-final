@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from collections import Counter
+from sklearn.cluster import AffinityPropagation
 
 
 start = time.time()
@@ -24,7 +25,7 @@ def get_kmeans(data,n):
 
     print('time to get Kmeans fit:', time.time()-start)
     print("Number of data points in each cluster:", Counter(labels))
-    return(kmeans)
+    return(labels)
 
 
 def get_silhouette(data, labels):
@@ -32,3 +33,9 @@ def get_silhouette(data, labels):
     print('time to silhouette_score:', time.time()-start)
     return(score)
 
+def get_affinity(data):
+    aff = AffinityPropagation()
+    labels = aff.fit_predict(data)
+
+    print('time to get Affinity Propagation', time.time() - start)
+    return(labels) 

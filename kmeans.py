@@ -25,7 +25,7 @@ def get_kmeans(data,n):
 
     print('time to get Kmeans fit:', time.time()-start)
     print("Number of data points in each cluster:", Counter(labels))
-    return(labels)
+    return(kmeans)
 
 
 def get_silhouette(data, labels):

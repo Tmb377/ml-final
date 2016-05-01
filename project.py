@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
+from scikits.statsmodels.tools import categorical 
 
 start = time.time()
 #data columns to use
@@ -49,12 +50,12 @@ processed_data = data.dropna(axis=0, subset=(time_cols + data_cols[:-1]), how='a
 
 print('time to get processed data:', time.time()-start)
 
-np.save('unencoded_call_data', processed_data)
+#np.save('unencoded_call_data', processed_data)
 
 #get_dummies replaces categorical features with binary features
 encoded_data = pd.get_dummies(processed_data)
 
-print(encoded_data.columns)
+
 #np.save('call_data', encoded_data)
 #save data into a pickle
 # pickle.dump(encoded_data, open('encoded_data.p','wb'))

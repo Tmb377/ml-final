@@ -65,9 +65,14 @@ print(encoded_data.columns)
 
 
 np.save('call_data', encoded_data)
-
-
+#save data into a pickle
+# pickle.dump(encoded_data, open('encoded_data.p','wb'))
+encoded_data = np.load('call_data.npy')
 print('time to get encoded_data:', time.time()-start)
 
 
+#default is 8 clusters
+#kmeans = KMeans(n_clusters=50, max_iter=20)
+#labels = kmeans.fit_predict(encoded_data)
 
+#print('time to get Kmeans fit:', time.time()-start)

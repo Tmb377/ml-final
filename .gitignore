@@ -1,4 +1,6 @@
-
+*.zip
+*.npy
+.DS_Store
 *.pyc
 
 *.p
